@@ -1,0 +1,126 @@
+/* RESET */
+html , body { width: 100%; height: 100%; }
+body { font-family: 'Droid Serif'; color: #000; overflow-x: hidden;}
+a { transition: 0.3s;}
+[href]:hover , [href]:focus { color: #EF017c; text-decoration: none;}
+p{line-height: 1.6em;}
+h1,h2{cursor: default;}
+h3{color: #EF017c!important; text-transform: uppercase; letter-spacing: 5px;} 
+
+
+/* FONTS */
+@font-face {
+    font-family: "BlowBrush";
+    src: url("polices/blowbrush/blowbrush.otf?") format("otf"),
+         url("polices/blowbrush/blowbrush.ttf?") format("truetype");
+
+}
+/* BURGER MENU */
+.burger-menu, .close-menu{display: inline-block; position: fixed; top: 20px; right: 20px; font-size: 30px; color: #EF017c; z-index: 100;}
+.menu-mobile{display: none; }
+.menu-mobile ul{margin: 100px 0 0 0; padding: 0; list-style-type: none; text-align: center; font-family: 'Blowbrush'; font-size: 24px; text-transform: uppercase; text-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);}
+.menu-mobile a{color: #fff;} 
+.menu-mobile a:hover{color: rgba(255,255,255,0.5);}
+.menu-mobile li{transform: rotate(-3deg) skew(-10deg); margin-bottom: 10px;}
+.menu-mobile li.current a{color: #000!important;}
+.menu-mobile{position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 200; background: #EF017c; background: linear-gradient(45deg, rgba(254,91,175,0.7) 0%,#ef017c 100%);}
+.close-menu{color: #fff;}
+.close-menu:hover{color: rgba(255,255,255,0.5);}
+
+/* HEADER */
+header{ position: fixed; width: 100%; top: 0; left: 0; z-index: 10; padding: 30px 30px; text-transform: uppercase; font-family: 'Montserrat', sans-serif;
+    text-align: right; border-bottom: 1px solid #ffffff38; font-size: 10px; transition: 0.5s;}
+header.fix-white{ background: #fff; border: 1px solid #fff; padding: 15px 50px;text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);}
+header ul { list-style: none; border: 0; padding: 0; margin-bottom: 0;}
+header a{ color: #fff;}
+header.fix-white a{ color: #000;}
+header.fix-white a:hover{ color: #dcdcdc;}
+header li { display: inline-block; padding: 0 10px;}
+.current a{ color: #EF017c!important;}
+
+
+/* HOMME */
+#home { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+#home h1 { margin: 0; padding: 0;}
+.logo { font-family: 'BlowBrush'; color: #fff; font-size: 180px; letter-spacing: 5px; text-shadow: 0 15px 15px rgba(0,0,0,0.15);
+    transform: rotate(-3deg) skew(-10deg);}
+.go { display: block; position: absolute; left: calc(50% - 25px); bottom: 10px; height: 30px; width: 30px;
+    border: 2px solid #fff; border-radius: 50px; font-size: 20px; color: #fff; text-align: center;
+    padding-top: 2px;}
+.go:hover { background: #fff;}
+
+
+/* SKILLS */
+#skills { padding: 100px 0;}
+#skills h1 {font-weight: bold; font-family: 'Montserrat'; font-size: 30px;text-transform: uppercase; letter-spacing: 3px; text-align: center; margin: 0;
+padding: 0 0 50px 0;}
+#skills p{text-align: justify;}
+#skills .icon{ text-align: center; }
+#skills i { color: #EF017c; font-size: 42px; padding-bottom: 20px;}
+#skills .btn { border: 2px solid #EF017c; border-radius: 50px; padding: 10px 30px 5px 30px; margin-top: 30px;}
+#skills a{color: #EF017c; text-transform: uppercase; font-size: 10px; font-weight: bold; }
+#skills a:hover{color: #fff;}
+#skills .btn:hover{background: #EF017c;}
+
+/* TEAMS */
+#team {background: #000; padding: 100px 0;}
+#team h1{color: #fff; margin: 0; padding: 0; text-align: center; font-family: 'Montserrat'; text-transform: uppercase; font-weight: bold; font-size: 30px; letter-spacing: 5px;}
+#team h1 span{display: block; text-transform: lowercase; font-family: 'Droid Serif'; letter-spacing: 0; font-size: 14px; font-style: italic; color: #EF017c; font-weight: normal; margin: 15px 0 30px 0 ;}
+#team .card{position: relative; margin-bottom: 20px; height: 300px; border-radius: 5px; overflow: hidden; opacity: 0.5; }
+#team .card:hover{opacity: 1; transition: 0.5s; }
+#team img{width: 100%; height: 100%; object-fit: cover;}
+#team h2{ margin: 0; padding: 0; top:90%; left: 50%;  transform: translate(-50%,-50%) rotate(-3deg) skew(-10deg); text-transform: uppercase; display: block; font-weight: bold; position: absolute;bottom: 0;  opacity: 0; color: white;font-size: 18px; font-family: 'Montserrat'; }
+#team .card:hover h2{opacity: 1; bottom: -50px; transition: 0.5s; } 
+
+/* DEVISE */
+#devise {height: 400px; display: flex; align-items: center;text-align: center;}
+#devise p{margin: 0; padding: 0; color: #fff; font-size: 38px; text-shadow: 0 0 20px rgba(0,0,0,0.9); font-style: italic; font-weight: bold; letter-spacing: -1px; font-family: 'Droid Serif'; cursor: default;}
+
+/* FOLIO */
+#folio{width: 100%; height: 100%; background: #000; display: flex; align-items: center; justify-content: center;}
+#folio img{width: 390px; height: 400px;}
+#folio h1{ margin-bottom: 30px; color: #fff; text-align: center; font-weight: bold; font-family: 'BlowBrush'; font-size: 50px; transform: rotate(-3deg) skew(-10deg);}
+#folio b{color: #EF017c;}
+/* display block pour assurer que l'image ne depase pas le bordure */
+#folio .slider a{display: block; border: 3px solid transparent; overflow: hidden;}
+#folio .slider a:hover{border: 3px solid #fff; }
+/* mettre en noire et blanc l'image */
+#folio img{filter: grayscale(100%);}
+#folio a:hover img{filter: grayscale(0%);transition: 2s;transform: scale(1.2);}
+
+/* CONTACTS */
+/* colorzilla.com */
+#contact {width:100%; height: 335px;padding-top: 70px; font-size: 11px; color: #fff; background: #EF017c; background: linear-gradient(to right, #fe5baf 0%,#ef017c 100%);}
+#contact .contact-email a{font-family: 'Montserrat'; font-size: 20px; color: #fff;}
+#contact .contact-email a:hover{color: rgba(255,255,255,0.7);}
+#contact .fa-envelope-o{color: rgba(255,255,255,0.25); margin-bottom: 20px;font-size: 50px;}
+#contact .tel{color: #fff; font-size: 15px;}
+#contact .contact-icons a{color: rgba(255,255,255,0.25); font-size: 20px; display: inline-block; margin: 0 5px;}
+#contact .contact-icons a:hover{color: #fff;}
+#contact .contact-infos {margin-top: 60px; cursor: default; border-top: 1px solid rgba(255,255,255,0.25); padding-top: 10px;; }
+#contact .contact-infos a{color: #fff;}
+#contact .contact-infos a:hover{color: #fff; text-decoration: underline;}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+    .logo{font-size: 72px;}
+    #skills h1 {font-size: 20px;}
+    #skills,#team{padding: 50px 0;overflow: hidden;}
+    #skills p{margin-bottom: 30px;}
+    #skills .last-skills p{margin-bottom: 0!important;}
+    #team h1 {font-size: 20px;}
+    #team .card{height: 200px;}
+    #team h2{font-size: 12px;}
+    #devise{height: 250px;}
+    #devise p{font-size:26px}
+    /* annuler le display flex dans le card et le heigth 100% */
+    #folio{display: block; height: auto; padding-bottom: 50px;}
+    #folio h1{font-size: 20px; margin: 50px 0 30px 0;}
+    #folio img{width: 290px; height: 250px;}
+    #folio .slider {margin: 0 0 30px 0;}
+    /* annuler les flèches gauche et droite du slider  */
+    #folio .slick-arrow {display: none!important;} 
+    #contact .contact-email a{font-size: 15px;}
+    #contact .contact-infos a{font-size: 9px;}
+}
